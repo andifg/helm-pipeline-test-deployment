@@ -1,17 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sealed-secrets
-  namespace: argocd
+  name: helm-pipeline-test
+  namespace: openshift-gitops
 spec:
   project: default
   source:
     chart: sealed-secrets
-    repoURL: https://bitnami-labs.github.io/sealed-secrets
-    targetRevision: 1.16.1
+    repoURL: 663151261323.dkr.ecr.eu-central-1.amazonaws.com/test-pipeline-chart
+    targetRevision: 2023-07-22-17-05-2120881f0025cee65eadd820ca787bf6921d9b41
     helm:
       releaseName: helm-chart-test-release
   destination:
     server: "https://kubernetes.default.svc"
     namespace: playground
-  targetRevision: 2023-07-22-17-05-2120881f0025cee65eadd820ca787bf6921d9b41

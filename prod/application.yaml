@@ -14,4 +14,4 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: playground
-  targetRevision: 2023-07-18-06-34-cfd3170e3f842e77f1da9ece9c2a1435f074b223
+  targetRevision: 2023-07-22-17-05-2120881f0025cee65eadd820ca787bf6921d9b41

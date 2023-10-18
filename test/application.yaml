@@ -8,7 +8,7 @@ spec:
   source:
     chart: test-pipeline-chart
     repoURL: 663151261323.dkr.ecr.eu-central-1.amazonaws.com
-    targetRevision: 2023-10-08-16-13-833c009fbd860688f297c4d97927fe128e950cb4
+    targetRevision: 2023-10-18-09-19-d0ad37163c9235eb2897e760f52a3b1df96894f6
     helm:
       releaseName: helm-chart-test-release
   destination:
